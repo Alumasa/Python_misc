@@ -12,3 +12,13 @@ write_file.close()
 #read from the file and then close it
 print(read_file.read())
 read_file.close()
+
+#Using with...as to automatocally close the file:
+with open("text.txt", "w") as my_file:
+    my_file.write("This is a new concept to me. \nI enjoy learning it!")
+
+    if my_file.closed == False:
+        my_file.close()
+
+print(my_file.closed)
+
