@@ -24,3 +24,16 @@ import re
 phoneNumberRegex = re.compile(r'\d\d\d-\d\d\d-\d\d\d\d')
 mo = phoneNumberRegex.search('My number is 415-555-4242')
 print('Phone number found:' + mo.group())
+
+# Use of sorted()
+first = [11.25, 18.0, 20.0]
+second = [10.75, 9.50]
+
+# Paste together first and second: full
+full = first + second
+
+# Sort full in descending order: full_sorted
+full_sorted = sorted(full,reverse=True)
+
+# Print out full_sorted
+print(full_sorted)
